@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Ernest Villacorta",
+    "email": "villaernest.developer@gmail.com"
+  },
   "homepage": "https://VillaErnest.github.io/project-valentine",
   "scripts": {
     "dev": "vite",
