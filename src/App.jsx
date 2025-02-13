@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import "./App.css";
 
 export default function App() {
@@ -9,8 +8,8 @@ export default function App() {
 
   const moveNoButton = () => {
     setNoPosition({
-      x: (Math.random() - 0.5) * 300,
-      y: (Math.random() - 0.5) * 300,
+      x: (Math.random() - 0.5) * 300, // Random movement on X
+      y: (Math.random() - 0.5) * 300, // Random movement on Y
     });
   };
 
@@ -38,14 +37,16 @@ export default function App() {
               >
                 YES
               </button>
-              <motion.div animate={noPosition}>
-                <button
-                  onClick={moveNoButton}
-                  className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-xl shadow-lg font-bold"
-                >
-                  NO
-                </button>
-              </motion.div>
+              <div
+                onClick={moveNoButton}
+                className="no-button bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-xl shadow-lg font-bold"
+                style={{
+                  transform: `translate(${noPosition.x}px, ${noPosition.y}px)`,
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                NO
+              </div>
             </div>
           </>
         ) : (
