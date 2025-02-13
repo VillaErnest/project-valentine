@@ -1,0 +1,19 @@
+{
+  "name": "project-valentine",
+  "version": "1.0.0",
+  "description": "Project Valentine is a prototype for a service app that allows users to send and receive online letters, prompts, and messages in a fun and meaningful way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VillaErnest/project-valentine.git"
+  },
+  "author": "Ernest Villacorta",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/VillaErnest/project-valentine/issues"
+  },
+  "homepage": "https://github.com/VillaErnest/project-valentine#readme"
+}
